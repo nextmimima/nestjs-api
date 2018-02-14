@@ -17,6 +17,7 @@
     "@nestjs/mongoose": "^3.0.1",
     "@nestjs/testing": "^4.5.5",
     "@nestjs/websockets": "^4.5.8",
+    "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "mongoose": "^5.0.4",
     "redis": "^2.7.1",

@@ -12,4 +12,4 @@ import {PageController} from './page.controller';
   controllers: [PageController],
   components: [PageService, ...PageProvider]
 })
-export class PostModule {}
+export class PageModule {}
