@@ -4,7 +4,7 @@
 import {IPost} from './IPost';
 import {PostEditModel} from '../models/postEdit.model';
 
-export interface IUsersService {
+export interface IPostService {
   create(post: PostEditModel): Promise<IPost>;
   find(where: Object): Promise<Array<IPost>>;
   findById(_id: string): Promise<IPost | null>;

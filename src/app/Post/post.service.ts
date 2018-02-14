@@ -2,11 +2,11 @@ import {Component, Inject, Query} from '@nestjs/common';
 
 import {Model} from 'mongoose';
 
-import {IPost} from './interfaces/IPost';
+import {IPost, IPostService} from './interfaces';
 import {PostEditModel} from './models/postEdit.model';
 
 @Component()
-export class PostService {
+export class PostService implements IPostService {
   constructor(@Inject('PostRepository') private readonly postRepository: Model<IPost>) {}
 
   /**
