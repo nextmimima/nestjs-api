@@ -28,7 +28,7 @@ export class PageController {
    * @param param._id post ID
    */
   @Get(':_id')
-  public async findUserById(@Response() res, @Param() param) {
+  public async findPageById(@Response() res, @Param() param) {
     const page = await this.pageService.findById(param._id);
     return res.status(HttpStatus.OK).json(page);
   }
