@@ -1,0 +1,11 @@
+{
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+  "files.exclude": {},
+  "editor.tabCompletion": true,
+  "editor.snippetSuggestions": "top",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}

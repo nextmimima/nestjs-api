@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Nest Debug",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      //"preLaunchTask": "nvm",
+      "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v8.9.0/bin/node",
+      "program": "${workspaceRoot}/index.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "skipFiles": ["${workspaceRoot}/node_modules/**/*.js", "<node_internals>/**/*.js"]
+    }
+  ]
+}
