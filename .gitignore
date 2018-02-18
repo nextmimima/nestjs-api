@@ -18,3 +18,8 @@ npm-debug.log
 
 # dist
 /dist
+
+# ignore files in folder configs/env
+configs/env/*
+# keep the configs/env folder
+!configs/env/.keep

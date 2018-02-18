@@ -1,34 +1,35 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "nest-restful-api-typescript-starter",
   "version": "0.1.0",
-  "description": "Nest TypeScript starter repository",
+  "description": "Nest Restful API TypeScript starter",
   "license": "MIT",
   "scripts": {
     "nvm": "~/.nvm/nvm-exec which node | xargs -J % ln -sf % ./.nvm-node && chmod +x ./.nvm-node",
-    "start": "node index.js",
-    "start:watch": "nodemon",
+    "dev": "NODE_ENV=testing node index.js",
+    "start": "NODE_ENV=development node index.js",
+    "watch": "NODE_ENV=development nodemon",
     "prestart:prod": "tsc",
-    "start:prod": "node dist/main.js"
+    "start:prod": "NODE_ENV=production node dist/main.js"
   },
   "dependencies": {
-    "@nestjs/common": "^4.5.9",
-    "@nestjs/core": "^4.5.10",
-    "@nestjs/microservices": "^4.5.8",
+    "@nestjs/common": "^4.6.3",
+    "@nestjs/core": "^4.6.3",
+    "@nestjs/microservices": "^4.6.1",
     "@nestjs/mongoose": "^3.0.1",
-    "@nestjs/testing": "^4.5.5",
+    "@nestjs/testing": "^4.6.1",
     "@nestjs/websockets": "^4.5.8",
     "cors": "^2.8.4",
     "dotenv": "^5.0.0",
-    "mongoose": "^5.0.4",
+    "mongoose": "^5.0.6",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^5.5.6",
-    "typescript": "^2.6.2"
+    "typescript": "^2.7.2"
   },
   "devDependencies": {
-    "@types/mongoose": "^5.0.1",
-    "@types/node": "^9.3.0",
-    "nodemon": "^1.14.1",
+    "@types/mongoose": "^5.0.2",
+    "@types/node": "^9.4.6",
+    "nodemon": "^1.15.0",
     "ts-node": "^4.1.0"
   }
 }
